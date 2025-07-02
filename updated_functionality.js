@@ -48,6 +48,35 @@ function getComputerChoice() {
         }
     }
 
+// // Restart button functionality
+// const restartBtn = document.querySelector("#restart-btn");
+// // Adding an event listener to the restart button
+// restartBtn.addEventListener("click", () => {
+//     // Reset the scores
+//     humanScore = 0;
+//     computerScore = 0;
+//     // Fetch the human and computer scores respectively alongside the parent div
+//     const scoreDiv = document.querySelector(".game-results")
+//     const humanPara = document.querySelector("#human-score")
+//     const computerPara = document.querySelector("#computer-score")
+//     const roundPara = document.querySelector("#round-result")
+//     // Reset the text content of the score paragraphs
+//     humanPara.textContent = ""
+//     computerPara.textContent = ""
+//     roundPara.textContent = ""
+//     // Show the starting message again
+//     const startMsg = document.createElement("p");
+//     startMsg.id = "starting-message";
+//     startMsg.textContent = "Click on an option to start playing!";
+//     scoreDiv.appendChild(startMsg);
+//     // Append these as children of the parent div
+//     // scoreDiv.appendChild(humanPara)
+//     // scoreDiv.appendChild(computerPara)
+//     // scoreDiv.appendChild(roundPara)
+//     // Hide the restart button
+//     restartBtn.style.display = "none";
+// });
+
 // Selecting all the items with the options selector
 const gameOptions = document.querySelectorAll(".options")
 // Adding an event listener to listen for clicks on the game options
@@ -98,6 +127,9 @@ gameOptions.forEach(option => {
         // Reset the scores
         humanScore = 0
         computerScore = 0
+
+        // // Show the restart button
+        // restartBtn.style.display = "block";
     }
     else if (humanScore == 5) {
         // Human wins game
@@ -112,6 +144,9 @@ gameOptions.forEach(option => {
         // Reset the scores
         humanScore = 0
         computerScore = 0
+
+        // // Show the restart button
+        // restartBtn.style.display = "block";
     }
   });
 });

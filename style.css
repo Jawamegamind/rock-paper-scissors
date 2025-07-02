@@ -76,6 +76,10 @@ img {
     font-weight: bold;
 }
 
+/* #restart-btn {
+    display: none;
+} */
+
 .footer {
     background-color: #1F2937;
     color: white;
